@@ -5,10 +5,16 @@
  */
 class News extends CActiveRecord {
 
-    const TYPE_A=1;
-    const TYPE_B=2;
-    const TYPE_C=3;
-    const TYPE_D=4;
+    const TYPE_N1=1;
+    const TYPE_N2=2;
+    const TYPE_N3=3;
+
+    const TYPE_F1=4;
+    const TYPE_F2=5;
+    const TYPE_F3=6;
+    const TYPE_F4=7;
+
+    const TYPE_P1=8;
 
     public static function model($className = __CLASS__) {
         return parent::model($className);
@@ -29,10 +35,14 @@ class News extends CActiveRecord {
     public static function GetType($type=null){
         $ar=array(
             ''=>"---请选择类型---",
-            self::TYPE_A=>"A",
-            self::TYPE_B=>"B",
-            self::TYPE_C=>"C",
-            self::TYPE_D=>"D",
+            self::TYPE_N1=>"新闻-综合",
+            self::TYPE_N2=>"新闻-体育",
+            self::TYPE_N3=>"新闻-娱乐",
+            self::TYPE_F1=>"服务-房产",
+            self::TYPE_F2=>"服务-美食",
+            self::TYPE_F3=>"服务-生活",
+            self::TYPE_F4=>"服务-留学",
+            self::TYPE_P1=>"图片",
         );
         return $type === null ? $ar : $ar[$type];
     }
