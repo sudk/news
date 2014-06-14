@@ -30,13 +30,14 @@ class BaseAttach extends CActiveRecord {
         $transaction = $conn->beginTransaction();
         try{
             $d=date("Y-m-d H:i:s");
-
-            $sql = "delete from base_attach where relation_id=:relation_id and type=:type ";
-            $command = $conn->createCommand($sql);
-            $command->bindParam(":relation_id",$relation_id, PDO::PARAM_STR);
-            $command->bindParam(":type",$type, PDO::PARAM_STR);
-            $command->execute();
             if(count($attaches)){
+
+                $sql = "delete from base_attach where relation_id=:relation_id and type=:type ";
+                $command = $conn->createCommand($sql);
+                $command->bindParam(":relation_id",$relation_id, PDO::PARAM_STR);
+                $command->bindParam(":type",$type, PDO::PARAM_STR);
+                $command->execute();
+                
                 foreach($attaches as $attach){
                     $sql = "insert into  base_attach set
                 relation_id=:relation_id,

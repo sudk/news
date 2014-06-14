@@ -23,10 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="News.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="News.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/News.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.22765599" vertical-offset="60" max-vertical-offset="1740">
+            <state line="26" column="29" selection-start="439" selection-end="439" vertical-scroll-proportion="27.166666" vertical-offset="1042" max-vertical-offset="1740">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="36" selection-start="2603" selection-end="2603" vertical-scroll-proportion="-13.458333" vertical-offset="1042" max-vertical-offset="1635">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseAttach.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/models/BaseAttach.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="16" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.47029704" vertical-offset="300" max-vertical-offset="2430">
               <folding />
             </state>
           </provider>
@@ -55,9 +73,9 @@
         <option value="$PROJECT_DIR$/protected/modules/mobile/controllers/ImgController.php" />
         <option value="$PROJECT_DIR$/protected/modules/mobile/views/img/_list.php" />
         <option value="$PROJECT_DIR$/protected/modules/mobile/views/img/detail.php" />
-        <option value="$PROJECT_DIR$/protected/models/BaseAttach.php" />
         <option value="$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php" />
         <option value="$PROJECT_DIR$/protected/models/News.php" />
+        <option value="$PROJECT_DIR$/protected/models/BaseAttach.php" />
       </list>
     </option>
   </component>
@@ -158,11 +176,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -180,7 +194,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,20 +353,6 @@
         <state line="8" column="39" selection-start="413" selection-end="413" vertical-scroll-proportion="0.20236088" vertical-offset="0" max-vertical-offset="593" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/BaseAttach.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="27" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="2415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.68421054" vertical-offset="240" max-vertical-offset="1635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/mobile/controllers/ImgController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="14" selection-start="871" selection-end="877" vertical-scroll-proportion="0.75247526" vertical-offset="204" max-vertical-offset="810">
@@ -371,7 +401,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/News.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.22765599" vertical-offset="60" max-vertical-offset="1740">
+        <state line="26" column="29" selection-start="439" selection-end="439" vertical-scroll-proportion="27.166666" vertical-offset="1042" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="36" selection-start="2603" selection-end="2603" vertical-scroll-proportion="-13.458333" vertical-offset="1042" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/BaseAttach.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="16" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.47029704" vertical-offset="300" max-vertical-offset="2430">
           <folding />
         </state>
       </provider>
