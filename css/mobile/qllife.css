@@ -1,0 +1,56 @@
+/**
+ql_life
+**/
+
+.list-group .list-group-item-sm{
+    padding:5px;
+}
+
+.chevron_right_color{
+    color:gainsboro;
+}
+
+.fixed_favor{
+    position: fixed; z-index: 2147483647;bottom:10px;top:auto;right:15px;display:block;font-size:40px;color:#f68014;
+}
+.category_l{
+    text-align:center;
+    margin-right:-1px;
+    height: 250px;
+}
+.category_l .active{
+    background-color:#ffffff;
+}
+.category_l table{
+    width:100%;
+
+}
+.category_l td{
+    height:25px;
+}
+.category_r{
+    background-color:#ffffff;
+    min-height: 250px;
+}
+.category_r .active{
+    border-bottom:1px solid red;
+    color:red;
+}
+.category_r table{
+    width:100%;
+    display: none;
+}
+.category_r tr{
+    border-bottom:1px solid gainsboro;
+    height:25px;
+}
+.category_r td{
+    height:25px;
+}
+.city_category{
+    list-style:none;
+}
+.city_category li{
+    display:inline;
+    font-size:16px;
+}

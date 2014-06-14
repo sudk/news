@@ -1,0 +1,25 @@
+<?php
+
+return array(
+    'coupon/coupon/new' => array('title' => '添加优惠券/活动', 'item' => array('' => '')),
+    'coupon/coupon/edit' => array('title' => '编辑优惠券/活动', 'item' => array('' => '')),
+    'coupon/coupon/del' => array('title' => '删除优惠券/活动', 'item' => array('' => '')),
+    'mchtm/mcht/new' => array('title' => '添加商户', 'item' => array('' => '')),
+    'mchtm/mcht/edit' => array('title' => '编辑商户', 'item' => array('' => '')),
+    'mchtm/mcht/del' => array('title' => '删除商户', 'item' => array('' => '')),
+    'operator/operator/new' => array('title' => '添加操作员', 'item' => array('' => '')),
+    'operator/operator/edit' => array('title' => '编辑操作员', 'item' => array('' => '')),
+    'operator/operator/editpri' => array('title' => '个人信息', 'item' => array('' => '')),
+    'operator/operator/del' => array('title' => '删除操作员', 'item' => array('' => '')),
+    'vipcard/vipcard/new' => array('title' => '添加会员卡', 'item' => array('' => '')),
+    'vipcard/vipcard/edit' => array('title' => '编辑会员卡', 'item' => array('' => '')),
+    'vipcard/vipcard/stop' => array('title' => '停用会员卡', 'item' => array('' => '')),
+    'vipcard/vipcard/start' => array('title' => '启用会员卡', 'item' => array('' => '')),
+    'top/top/new' => array('title' => '添加推送', 'item' => array('' => '')),
+    'top/top/edit' => array('title' => '编辑推送', 'item' => array('' => '')),
+    'top/top/del' => array('title' => '删除推送', 'item' => array('' => '')),
+    'top/top/ajaxsave' => array('title' => '保存推送', 'item' => array('' => '')),
+    'top/top/groupdel' => array('title' => '删除推送', 'item' => array('' => '')),
+    'site/login' => array('title' => '登录', 'item' => array('' => '')),
+    'voucher/voucher/new' => array('title' => '添加代金券', 'item' => array('' => '')),
+);
