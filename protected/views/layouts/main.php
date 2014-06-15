@@ -6,7 +6,7 @@
 <!-- content end -->
 <!-- footer start -->
 <div class="row" style="margin-top:-5px;padding-top:-5px;">
-    <h4 class="text-center"><small>quick</small></h4>
+    <h4 class="text-center"><small>澳洲网络电台</small></h4>
 </div>
 <!-- footer end -->
 
