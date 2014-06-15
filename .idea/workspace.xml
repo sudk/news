@@ -23,28 +23,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="_list.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/img/_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="10" selection-start="448" selection-end="448" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/modules/mobile/controllers/NewsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="9" selection-start="446" selection-end="446" vertical-scroll-proportion="0.38593483" vertical-offset="105" max-vertical-offset="915">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileLinkPager.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/widgets/MobileLinkPager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="4" selection-start="881" selection-end="881" vertical-scroll-proportion="-12.5" vertical-offset="225" max-vertical-offset="1365">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImgController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/mobile/controllers/ImgController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="32" selection-start="522" selection-end="522" vertical-scroll-proportion="-6.5416665" vertical-offset="203" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_list.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/news/_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="47" selection-start="979" selection-end="979" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="420">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/news/list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="5" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="News.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/News.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="29" selection-start="439" selection-end="439" vertical-scroll-proportion="27.166666" vertical-offset="1042" max-vertical-offset="1740">
+            <state line="104" column="45" selection-start="2995" selection-end="2995" vertical-scroll-proportion="-17.208334" vertical-offset="1147" max-vertical-offset="1755">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="36" selection-start="2603" selection-end="2603" vertical-scroll-proportion="-13.458333" vertical-offset="1042" max-vertical-offset="1635">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseAttach.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BaseAttach.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/BaseAttach.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="16" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.47029704" vertical-offset="300" max-vertical-offset="2430">
+            <state line="134" column="36" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-6.7916665" vertical-offset="1847" max-vertical-offset="2445">
               <folding />
             </state>
           </provider>
@@ -60,10 +107,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/models/Operator.php" />
-        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
         <option value="$PROJECT_DIR$/protected/components/MobileController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/mobile/views/news/_list.php" />
         <option value="$PROJECT_DIR$/protected/modules/news/views/news/edit.php" />
         <option value="$PROJECT_DIR$/protected/modules/news/views/news/new.php" />
         <option value="$PROJECT_DIR$/protected/modules/news/views/news/list.php" />
@@ -71,11 +115,14 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/protected/modules/news/views/news/_form.php" />
         <option value="$PROJECT_DIR$/protected/modules/mobile/controllers/ImgController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/mobile/views/img/_list.php" />
         <option value="$PROJECT_DIR$/protected/modules/mobile/views/img/detail.php" />
         <option value="$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/mobile/views/img/_list.php" />
+        <option value="$PROJECT_DIR$/protected/components/widgets/MobileLinkPager.php" />
         <option value="$PROJECT_DIR$/protected/models/News.php" />
         <option value="$PROJECT_DIR$/protected/models/BaseAttach.php" />
+        <option value="$PROJECT_DIR$/protected/modules/mobile/views/news/_list.php" />
+        <option value="$PROJECT_DIR$/protected/modules/mobile/controllers/NewsController.php" />
       </list>
     </option>
   </component>
@@ -224,7 +271,163 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,31 +516,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/news/views/news/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="86" selection-start="487" selection-end="487" vertical-scroll-proportion="0.22277227" vertical-offset="0" max-vertical-offset="606" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/news/views/news/new.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="299" selection-end="299" vertical-scroll-proportion="0.1980198" vertical-offset="0" max-vertical-offset="606" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/news/_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.5059022" vertical-offset="0" max-vertical-offset="593" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/news/list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="185" selection-end="185" vertical-scroll-proportion="0.17326732" vertical-offset="0" max-vertical-offset="606" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="20" selection-start="9619" selection-end="9623" vertical-scroll-proportion="0.10490694" vertical-offset="2368" max-vertical-offset="12405" />
@@ -353,32 +531,11 @@
         <state line="8" column="39" selection-start="413" selection-end="413" vertical-scroll-proportion="0.20236088" vertical-offset="0" max-vertical-offset="593" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/controllers/ImgController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="14" selection-start="871" selection-end="877" vertical-scroll-proportion="0.75247526" vertical-offset="204" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/img/detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="6" selection-start="150" selection-end="150" vertical-scroll-proportion="0.04950495" vertical-offset="0" max-vertical-offset="606">
           <folding>
             <marker date="1402584394000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/img/_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="685" selection-end="685" vertical-scroll-proportion="0.22765599" vertical-offset="0" max-vertical-offset="593">
-          <folding>
-            <marker date="1402584193000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1402584193000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1402584193000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1402584193000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1402584193000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1402584193000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -399,23 +556,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/News.php">
+    <entry file="file://$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="29" selection-start="439" selection-end="439" vertical-scroll-proportion="27.166666" vertical-offset="1042" max-vertical-offset="1740">
+        <state line="38" column="27" selection-start="945" selection-end="945" vertical-scroll-proportion="0.8347386" vertical-offset="75" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/news/controllers/NewsController.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/widgets/AjaxLinkPager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="36" selection-start="2603" selection-end="2603" vertical-scroll-proportion="-13.458333" vertical-offset="1042" max-vertical-offset="1635">
+        <state line="21" column="35" selection-start="550" selection-end="550" vertical-scroll-proportion="0.35413152" vertical-offset="30" max-vertical-offset="2940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/news/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="185" selection-end="185" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/widgets/MobileLinkPager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="4" selection-start="881" selection-end="881" vertical-scroll-proportion="-12.5" vertical-offset="225" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="45" selection-start="2995" selection-end="2995" vertical-scroll-proportion="-17.208334" vertical-offset="1147" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/controllers/ImgController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="32" selection-start="522" selection-end="522" vertical-scroll-proportion="-6.5416665" vertical-offset="203" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/BaseAttach.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="16" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.47029704" vertical-offset="300" max-vertical-offset="2430">
+        <state line="134" column="36" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-6.7916665" vertical-offset="1847" max-vertical-offset="2445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/img/_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="448" selection-end="448" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/views/news/_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="47" selection-start="979" selection-end="979" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="420">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/mobile/controllers/NewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="9" selection-start="446" selection-end="446" vertical-scroll-proportion="0.38593483" vertical-offset="105" max-vertical-offset="915">
           <folding />
         </state>
       </provider>

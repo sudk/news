@@ -37,7 +37,7 @@ class BaseAttach extends CActiveRecord {
                 $command->bindParam(":relation_id",$relation_id, PDO::PARAM_STR);
                 $command->bindParam(":type",$type, PDO::PARAM_STR);
                 $command->execute();
-                
+
                 foreach($attaches as $attach){
                     $sql = "insert into  base_attach set
                 relation_id=:relation_id,
@@ -146,6 +146,7 @@ class BaseAttach extends CActiveRecord {
         $rs['total_num'] = $total_num;
         $rs['total_page'] = ceil($rs['total_num'] / $rs['page_num']);
         $rs['num_of_page'] = $pages->pageSize;
+        $rs['url'] = "./?r=mobile/img/grid";
         $rs['rows'] = $rows;
 
         return $rs;

@@ -6,5 +6,5 @@
         </a>
         <?php endforeach;?>
     </div>
-<?php $this->widget('MobileLinkPager', array('id' => 'list','page_num' =>$rs['page_num'],'total_num' =>$rs['total_num'],'num_of_page'=>$rs['num_of_page'],'condition'=>$rs['condition'],'order'=>$rs['order'],'url'=>$rs['url'])); ?>
+<?php $this->widget('MobileLinkPager', array('id' => 'list','page_num' =>$rs['page_num'],'total_num' =>$rs['total_num'],'num_of_page'=>$rs['num_of_page'],'order'=>$rs['order'],'url'=>$rs['url'])); ?>
 </div>

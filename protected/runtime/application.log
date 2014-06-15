@@ -8953,3 +8953,30 @@ in /Applications/XAMPP/xamppfiles/htdocs/news/index.php (20)
 2014/06/13 00:10:09 [warning] [application] Failed to set unsafe attribute "content" of "News".
 in /Applications/XAMPP/xamppfiles/htdocs/news/protected/modules/news/controllers/NewsController.php (84)
 in /Applications/XAMPP/xamppfiles/htdocs/news/index.php (20)
+2014/06/15 12:33:16 [error] [exception.CException] exception 'CException' with message '属性 "AjaxLinkPager.page_num" 未被定义.' in /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/base/CComponent.php:173
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CWidgetFactory.php(161): CComponent->__set('page_num', 1)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(NewsController), 'AjaxLinkPager', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CBaseController.php(172): CBaseController->createWidget('AjaxLinkPager', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/news/protected/modules/mobile/views/news/_list.php(22): CBaseController->widget('AjaxLinkPager', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CBaseController.php(126): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/news/protected/modules/mobile/controllers/NewsController.php(26): CController->renderPartial('_list', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/news/protected/modules/mobile/views/news/list.php(2): NewsController->actionGrid()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CBaseController.php(126): require('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CController.php(869): CBaseController->renderFile('/Applications/X...', NULL, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CController.php(782): CController->renderPartial('list', NULL, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/news/protected/modules/mobile/controllers/NewsController.php(34): CController->render('list')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/actions/CInlineAction.php(49): NewsController->actionList()
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CWebApplication.php(282): CController->run('list')
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/web/CWebApplication.php(141): CWebApplication->runController('mobile/news/lis...')
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii-1.1.14/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /Applications/XAMPP/xamppfiles/htdocs/news/index.php(20): CApplication->run()
+#22 {main}
+REQUEST_URI=/news/?r=mobile/news/list
+---

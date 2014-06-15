@@ -102,6 +102,7 @@ class News extends CActiveRecord {
         $rs['total_num'] = $total_num;
         $rs['total_page'] = ceil($rs['total_num'] / $rs['page_num']);
         $rs['num_of_page'] = $pages->pageSize;
+        $rs['url'] = "./?r=mobile/news/grid";
         $rs['rows'] = $rows;
 
         return $rs;

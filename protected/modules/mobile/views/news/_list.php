@@ -1,7 +1,6 @@
-<div  class="list-group" style="margin-bottom:5px;">
-
+<div  class="list-group" style="margin-bottom:0px;">
 <?php $i=1; foreach($rs['rows'] as $row):?>
-    <?php if($i==1):?>
+    <?php if($i==1&&$_GET['page']==1):?>
         <a class="list-group-item list-group-item-sm row" href="./?r=mobile/news/detail&id=<?=$row['news_id']?>">
             <div class="col-xs-12" style="padding:0px;vertical-align:middle;">
                 <img width="100%" height="200px" src="<?=BaseAttach::MakeURL($img_s,$row['news_id'])?>" alt="..." class="img-rounded">
@@ -19,7 +18,6 @@
             </div>
         </a>
     <?php endif;?>
-
 <?php $i++; endforeach;?>
-<?php $this->widget('MobileLinkPager', array('id' => 'list','page_num' =>$rs['page_num'],'total_num' =>$rs['total_num'],'num_of_page'=>$rs['num_of_page'],'condition'=>$rs['condition'],'order'=>$rs['order'],'url'=>$rs['url'])); ?>
+<?php $this->widget('MobileLinkPager', array('id' => 'list','page_num' =>$rs['page_num'],'total_num' =>$rs['total_num'],'num_of_page'=>$rs['num_of_page'],'order'=>$rs['order'],'url'=>$rs['url'])); ?>
 </div>
