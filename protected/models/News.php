@@ -8,13 +8,25 @@ class News extends CActiveRecord {
     const TYPE_N1=1;
     const TYPE_N2=2;
     const TYPE_N3=3;
+    const TYPE_N4=4;
 
-    const TYPE_F1=4;
-    const TYPE_F2=5;
-    const TYPE_F3=6;
-    const TYPE_F4=7;
+    const TYPE_F1=5;
+    const TYPE_F2=6;
+    const TYPE_F3=7;
 
     const TYPE_P1=8;
+    const TYPE_P2=9;
+    const TYPE_P3=10;
+    const TYPE_P4=11;
+
+    const TYPE_Q1=12;
+    const TYPE_Q2=13;
+    const TYPE_Q3=14;
+    const TYPE_Q4=15;
+    const TYPE_Q5=16;
+    const TYPE_Q6=17;
+    const TYPE_Q7=18;
+    const TYPE_Q8=19;
 
     public static function model($className = __CLASS__) {
         return parent::model($className);
@@ -32,17 +44,38 @@ class News extends CActiveRecord {
         );
     }
 
+    /**
+    电子报--热点、文体、小说、应用
+    澳洲风情--民俗、文化、风光
+    魅力山东--城市宣传、招商引资、企业推广、旅游文化
+    澳洲指南--教育、留学、旅游、美食、交通、酒店、医院、求救电话：000
+     **/
+
     public static function GetType($type=null){
         $ar=array(
             ''=>"---请选择类型---",
-            self::TYPE_N1=>"新闻-综合",
-            self::TYPE_N2=>"新闻-体育",
-            self::TYPE_N3=>"新闻-娱乐",
-            self::TYPE_F1=>"服务-房产",
-            self::TYPE_F2=>"服务-美食",
-            self::TYPE_F3=>"服务-生活",
-            self::TYPE_F4=>"服务-留学",
-            self::TYPE_P1=>"图片",
+            self::TYPE_N1=>"电子报-热点",
+            self::TYPE_N2=>"电子报-文体",
+            self::TYPE_N3=>"电子报-小说",
+            self::TYPE_N4=>"电子报-应用",
+
+            self::TYPE_F1=>"澳洲风情-民俗",
+            self::TYPE_F2=>"澳洲风情-文化",
+            self::TYPE_F3=>"澳洲风情-风光",
+
+            self::TYPE_P1=>"魅力山东-城市宣传",
+            self::TYPE_P2=>"魅力山东-招商引资",
+            self::TYPE_P3=>"魅力山东-企业推广",
+            self::TYPE_P4=>"魅力山东-旅游文化",
+
+            self::TYPE_Q1=>"澳洲指南-教育",
+            self::TYPE_Q2=>"澳洲指南-留学",
+            self::TYPE_Q3=>"澳洲指南-旅游",
+            self::TYPE_Q4=>"澳洲指南-美食",
+            self::TYPE_Q5=>"澳洲指南-交通",
+            self::TYPE_Q6=>"澳洲指南-酒店",
+            self::TYPE_Q7=>"澳洲指南-医院",
+            self::TYPE_Q8=>"澳洲指南-求救电话",
         );
         return $type === null ? $ar : $ar[$type];
     }
