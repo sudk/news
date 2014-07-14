@@ -14,3 +14,4 @@
         </a>
     </div>
 </div>
+<span class="fixed_favor glyphicon glyphicon-arrow-left" onclick="javascript:history.go(-1);"></span>
