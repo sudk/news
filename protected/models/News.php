@@ -49,8 +49,8 @@ class News extends CActiveRecord {
 
     public static function ToTop($to_top=null){
         $ar=array(
-            self::To_Top=>"是",
-            self::Not_To_Top=>"否"
+            self::To_Top=>"YES",
+            self::Not_To_Top=>"NO"
         );
         return $to_top === null ? $ar : $ar[$to_top];
     }
@@ -61,22 +61,22 @@ class News extends CActiveRecord {
     public static function GetType($type=null){
         $ar=array(
             ''=>"---请选择栏目---",
-            self::TYPE_1=>"电子报-期刊",
-            self::TYPE_2=>"电子报-企业动态",
-            self::TYPE_3=>"IAUTV节目-城市之光",
-            self::TYPE_4=>"IAUTV节目-速成美食家",
-            self::TYPE_5=>"IAUTV节目-海外生活志",
-            self::TYPE_6=>"IAUTV节目-号码搜索器",
-            self::TYPE_7=>"IAUTV节目-相约澳洲",
-            self::TYPE_8=>"商务中心-城市宣传",
-            self::TYPE_9=>"商务中心-招商引资",
-            self::TYPE_10=>"商务中心-企业推广",
-            self::TYPE_11=>"商务中心-旅游文化",
-            self::TYPE_12=>"澳洲指南-留学",
-            self::TYPE_13=>"澳洲指南-养身",
-            self::TYPE_14=>"澳洲指南-旅游",
-            self::TYPE_15=>"澳洲指南-美食",
-            self::TYPE_16=>"澳洲指南-潮流",
+            self::TYPE_1=>"News-Journal",
+            self::TYPE_2=>"News-Dynamic",
+            self::TYPE_3=>"IAUTV-City",
+            self::TYPE_4=>"IAUTV-Gourmet",
+            self::TYPE_5=>"IAUTV-Australia Life",
+            self::TYPE_6=>"IAUTV-Directory",
+            self::TYPE_7=>"IAUTV-In Australia",
+            self::TYPE_8=>"Business-City Propaganda",
+            self::TYPE_9=>"Business-Attract Investment",
+            self::TYPE_10=>"Business-Promote",
+            self::TYPE_11=>"Business-Tourism Culture",
+            self::TYPE_12=>"Australia-Study Abroad",
+            self::TYPE_13=>"Australia-Healthy",
+            self::TYPE_14=>"Australia-Traveling",
+            self::TYPE_15=>"Australia-Food",
+            self::TYPE_16=>"Australia-Trend",
         );
         return $type === null ? $ar : $ar[$type];
     }
