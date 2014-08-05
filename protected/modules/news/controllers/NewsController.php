@@ -21,10 +21,10 @@ class NewsController extends BaseController {
         $t->updateDom = 'datagrid';
         $t->set_header('序号', '5%', '');
         $t->set_header('标题', '40%', '');
-        $t->set_header('作者', '8%', '');
-        $t->set_header('发表日期', '10%', '');
-        $t->set_header('是否置项', '10%', '');
-        $t->set_header('类型', '8%', '');
+        $t->set_header('作者', '12%', '');
+        $t->set_header('发表日期', '8%', '');
+        $t->set_header('置项', '5%', '');
+        $t->set_header('类型', '10%', '');
         $t->set_header('记录时间', '10%', '');
         $t->set_header('操作', '10%', '');
         return $t;
@@ -63,7 +63,7 @@ class NewsController extends BaseController {
             $rs=$model->save();
             if($rs){
                 $attaches=$_POST['attaches'];
-                BaseAttach::AddAttaches($attaches,$id,BaseAttach::TYPE_PIC);
+                BaseAttach::AddAttaches($attaches,$id,BaseAttach::TYPE_News);
                 $msg['status']=1;
                 $msg['desc']="添加成功";
                 $model=new News('create');
@@ -89,7 +89,7 @@ class NewsController extends BaseController {
             $rs=$model->save();
             if($rs){
                 $attaches=$_POST['attaches'];
-                BaseAttach::AddAttaches($attaches,$id,BaseAttach::TYPE_PIC);
+                BaseAttach::AddAttaches($attaches,$id,BaseAttach::TYPE_News);
                 $msg['status']=1;
                 $msg['desc']="修改成功";
             }else{
@@ -97,8 +97,10 @@ class NewsController extends BaseController {
                 $msg['desc']="修改失败";
             }
         }
+        $attach=BaseAttach::FindOneByRId($id,BaseAttach::TYPE_News);
+
         $this->layout='//layouts/m_base';
-        $this->render('edit',array('model'=>$model,'msg'=>$msg));
+        $this->render('edit',array('model'=>$model,'msg'=>$msg,'attach'=>$attach));
     }
 
 }

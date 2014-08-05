@@ -6,8 +6,7 @@
  */
 class BaseAttach extends CActiveRecord {
 
-	const TYPE_PIC = '1';
-    const TYPE_File = '2';
+	const TYPE_News = '1';
 	
 	public static function model($className=__CLASS__){
 		return parent::model($className);
@@ -99,14 +98,13 @@ class BaseAttach extends CActiveRecord {
         return false;
     }
 
-    public static function  MakeURL($img_s,$id){
-        if(isset($img_s[$id])){
-            return Yii::app()->params['assets_path'].$img_s[$id];
+    public static function  MakeURL($attachs,$id){
+        if(isset($attachs[$id])){
+            return Yii::app()->params['assets_path'].$attachs[$id];
         }else{
             return Yii::app()->params['assets_path']."base.jpg";
         }
     }
-
 
     public static function queryList($page, $pageSize, $args = array()) {
 

@@ -9,20 +9,12 @@ if (is_array($rows)) {
         if($row['login_name']=='admin'||$row['login_name']==Yii::app()->user->id)
         	$link = "<i>无操作</i>";
         else{
-        	
-        	if(Yii::app ()->user->checkAccess ( "operator/operator/edit" ))
-        		$link = CHtml::link('编辑', "javascript:itemEdit('{$row['op_id']}')", array());
-        	if(Yii::app ()->user->checkAccess ( "operator/operator/auth" ))
-        		$link .= CHtml::link('权限', "javascript:authEdit('{$row['op_id']}','{$row['name']}')", array());
-        	if(Yii::app ()->user->checkAccess ( "operator/operator/pwd" ))
-        		$link .= CHtml::link('重置密码', "javascript:itemPwd('{$row['op_id']}')", array());
-        	if(Yii::app ()->user->checkAccess ( "operator/operator/del" ))
-        		$link .= CHtml::link('删除', "javascript:itemDelete('{$row['op_id']}')", array());
-        	
-        	
+            $link = CHtml::link('编辑', "javascript:itemEdit('{$row['op_id']}')", array());
+            $link .= CHtml::link('重置密码', "javascript:itemPwd('{$row['op_id']}')", array());
+            $link .= CHtml::link('删除', "javascript:itemDelete('{$row['op_id']}','{$row['name']}')", array());
         }
-        //$t->echo_td($num);
-        $t->echo_td($row['op_id']);
+        $t->echo_td($num);
+        //$t->echo_td($row['op_id']);
         $t->echo_td(Operator::getTypeRs($row['type']));
         $t->echo_td($row['name']); 
         $t->echo_td($row['login_name']); 

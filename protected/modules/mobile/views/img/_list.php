@@ -1,6 +1,7 @@
 <div  class="list-group" style="margin-bottom:5px;">
     <div class="list-group-item list-group-item-sm row">
         <?php foreach($rs['rows'] as $row):?>
+            <?php if(substr(strrchr ($row['path'], '.'), 1)=="mp4"){continue;}?>
         <a class="col-xs-6" href="./?r=mobile/img/detail&id=<?=$row['id']?>" style="margin-bottom:10px;">
             <img width="100%" height="100%" src="<?=Yii::app()->params['assets_path'].$row['path']?>" alt="..." class="img-thumbnail">
         </a>

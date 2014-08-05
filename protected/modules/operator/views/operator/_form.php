@@ -20,8 +20,6 @@ $form = $this->beginWidget('SimpleForm', array(
 if ($_mode_ == 'modify') {
     echo $form->activeHiddenField($model, 'op_id', array(), '');
 }
-
-
 ?>
 <table class="formList">
     <tr>
@@ -48,13 +46,8 @@ if ($_mode_ == 'modify') {
         <td class="mivalue"><?php echo $form->activeTextField($model, 'email', array('title' => '请填写邮箱地址', 'class' => 'input_text'), 'email'); ?></td>
     </tr>
     <tr>
-        <td class="maxname">操作员类型：</td>
-        <td class="mivalue">
-            <?php echo $form->activeDropDownList($model, 'type', Operator::getTypeRs(), array('title' => '本项必选', 'class' => 'input_text', 'readonly' => "true"), 'required'); ?>
-        </td>
-        
         <td class="maxname">登录账号：</td>
-        <td class="mivalue">
+        <td class="mivalue"  colspan="3">
             <?php
             if ($_mode_ == 'insert') {
                 echo $form->activeTextField($model, 'login_name', array('title' => '本项必填', 'class' => 'input_text', 'onblur' => $checkId, 'readonly' => $readonly, 'maxlength' => 20), 'required');

@@ -25,6 +25,13 @@ if($__model__=='edit'){
         </td>
     </tr>
     <tr>
+        <td class="maxname">是否置顶：</td>
+        <td class="mivalue" style='width:350px;'>
+            <?php echo $form->activeCheckBox($model, 'to_top', array('title' => '本项必填', 'class' => 'input_text lng_address'), ''); ?>
+            <span class='colRed'></span>
+        </td>
+    </tr>
+    <tr>
     	<td class="maxname">发表日期：</td>
     	<td class="mivalue">
     		<?php echo $form->activeTextField($model, 'public_date', array('title' => '本项必填', 'class' => 'input_text Wdate','onclick'=>"WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',skin:'whyGreen',errDealMode:0})"), ''); ?>
@@ -38,20 +45,13 @@ if($__model__=='edit'){
         </td>
     </tr>
     <tr>
-        <td class="maxname">类型：</td>
+        <td class="maxname">栏目：</td>
         <td class="mivalue">
             <?php echo $form->activeDropDownList($model,'type',News::GetType(), array('title' => '本项必填', 'class' => 'input_text'), 'required'); ?>
             <span class='colRed'>*</span>
         </td>
     </tr>
-    <tr>
-        <td class="maxname">地址：</td>
-        <td class="mivalue">
-            <?php echo $form->activeTextField($model,'addr', array('class' => 'input_text address'), ''); ?>
-            <span class='colRed'>*</span>
-        </td>
-    </tr>
-   <?php $this->renderPartial('_formpic', array('model' => $model,'__model__'=>$__model__));?>
+   <?php $this->renderPartial('_formpic', array('model' => $model,'__model__'=>$__model__,'attach'=>$attach));?>
     <tr>
         <td class="maxname">摘要：</td>
         <td class="mivalue">

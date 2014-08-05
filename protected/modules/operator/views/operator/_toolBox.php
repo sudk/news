@@ -1,13 +1,4 @@
 <form name="_query_form" id="_query_form" action="javascript:itemQuery();">
-   <li>
-        <span class="sift-title">账户类型：</span>
-        <?php
-        echo CHtml::link('不限', '', array('class' => 'air', 'name' => 'Types[]', 'qvalue' => ''));
-        foreach (Operator::getTypeRs() as $k => $v) {
-            echo CHtml::link($v, '', array('qvalue' => $k, 'name' => 'Types[]'));
-        }
-        ?>
-    </li>
     <li>
         <span class="sift-title">搜索：</span>
         

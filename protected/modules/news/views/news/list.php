@@ -20,7 +20,7 @@
         tipsWindown(
             "编辑操新闻", // title：窗口标题
             "iframe:index.php?r=news/news/edit&id=" + id, // Url：弹窗所加截的页面路径
-            "950", // width：窗体宽度
+            "1050", // width：窗体宽度
             "520", // height：窗体高度
             "true", // drag：是否可以拖动（ture为是,false为否）
             "", // time：自动关闭等待的时间，为空代表不会自动关闭

@@ -22,8 +22,9 @@ class NewsController extends MobileController {
             $args[$_REQUEST['q_by']] = $_REQUEST['q_value'];
         }
         $rs = News::queryList($page, $this->page_size, $args);
-        $img_s=BaseAttach::FindByNewsRows($rs['rows'],BaseAttach::TYPE_PIC);
-        $this->renderPartial('_list', array('rs' => $rs,'img_s'=>$img_s));
+        $attachs=BaseAttach::FindByNewsRows($rs['rows'],BaseAttach::TYPE_News);
+
+        $this->renderPartial('_list', array('rs' => $rs,'attachs'=>$attachs));
     }
 
     /**
@@ -42,11 +43,11 @@ class NewsController extends MobileController {
         $this->layout='//layouts/second';
         $id=$_GET['id'];
         $model=News::model()->findByPk($id);
-        $img=BaseAttach::FindOneByRId($id,BaseAttach::TYPE_PIC);
+        $attach=BaseAttach::FindOneByRId($id,BaseAttach::TYPE_News);
         if(!$img){
             $img['path']="base.jpg";
         }
-        $this->render('detail',array('model'=>$model,'img'=>$img));
+        $this->render('detail',array('model'=>$model,'attach'=>$attach));
     }
 
     public function actionMap()

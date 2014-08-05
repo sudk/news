@@ -309,29 +309,16 @@ return array(
     }
 
     //上传图片
-    public function actionPicupload(){
+    public function actionFileupload(){
         $file = $_FILES['attach'];
         if($file){
             //上传图片
-            if($file['name']){
-                $file_rs = Utils::fileUpload($file);
-                $msg['status'] = $file_rs['status'];
-                $msg['msg'] = $file_rs['desc'];
-                $msg['fullpath'] = Yii::app() -> params['upload_file_path']."/".$file_rs['savename'];
-                $msg['filename'] = $file_rs['savename'];
-                $imgsize = getimagesize($msg['fullpath']);
-                $msg["pic_w"] = $imgsize[0];
-                $msg["pic_h"] = $imgsize[1];
-            }
-
+            $msg = Utils::fileUpload($file);
         }else{
             $msg['status'] = -1;
             $msg['msg'] = "没有上传任何图片";
-
         }
-
         print_r(json_encode($msg));
-
     }
 
 }

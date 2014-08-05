@@ -12,8 +12,8 @@ if (is_array($rows)) {
         $t->echo_td($row['title']);
         $t->echo_td($row['author']);
         $t->echo_td($row['public_date']);
-        $t->echo_td($row['to_top']);
-        $t->echo_td($row['type']);
+        $t->echo_td(News::ToTop($row['to_top']));
+        $t->echo_td(News::GetType($row['type']));
         $t->echo_td($row['record_time']);
         $t->echo_td($link);
         $t->end_row();

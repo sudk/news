@@ -21,7 +21,7 @@ class ImgController extends MobileController {
         {
             $args[$_REQUEST['q_by']] = $_REQUEST['q_value'];
         }
-        $args['type']=BaseAttach::TYPE_PIC;
+        $args['type']=BaseAttach::TYPE_News;
         $rs = BaseAttach::queryList($page, $this->page_size, $args);
 
         $this->renderPartial('_list', array('rs' => $rs));

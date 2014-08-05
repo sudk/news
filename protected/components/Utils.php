@@ -359,14 +359,18 @@ page;
 	
 	public static function fileUpload($file) {
 		$return = array ();
-		
+
 		$full_dir = Yii::app ()->params ['upload_file_path'];
 		$fname = $file ['name'];
+
+        $fileTypes = array('jpg','jpeg','gif','png','mp4'); // File extensions
+        $fileParts = pathinfo($fname);
+
 		$ftype = substr ( strrchr ( $fname, '.' ), 1 );
 		if ($file ['error'] > 0) {
 			$return ['status'] = '-1';
 			$return ['desc'] = '上传文件失败';
-		} elseif (empty ( $fname )) {
+		} elseif (empty( $fname )) {
 			$return ['status'] = '-1';
 			$return ['desc'] = '没有上传任何文件';
 		} elseif ($file ['size'] > (Yii::app ()->params ['upload_file_maxsize']) * 1024 * 1024) {
@@ -375,29 +379,28 @@ page;
 		} elseif ($file ['size'] == 0) {
 			$return ['status'] = '-1';
 			$return ['desc'] = '上传文件不能为空';
-		} else {
+		}elseif (!in_array($fileParts['extension'],$fileTypes)) {
+            $return ['status'] = '-1';
+            $return ['desc'] = '上传文件格式不正确！';
+        } else {
 			$rname = time().rand(0,1000);
 			$dname = $rname . '.' . $ftype;
 			if (! is_dir ( $full_dir )) {
 				umask ( 0000 );
 				mkdir ( $full_dir, 0777, true );
 			}
-			if (file_exists ( $full_dir )) {
-				$path = $full_dir . '/' . $dname;
-				if (move_uploaded_file ( $file['tmp_name'], $path )) {
-					$return ['status'] = '1';
-					$return ['desc'] = '文件上传成功';
-					$return ['upname'] = $fname;
-					$return ['savename'] = $dname;
-				} else {
-					$return ['status'] = '-1';
-					$return ['desc'] = '服务器繁忙，上传失败';
-				}
-			
-			} else {
-				$return ['status'] = '-1';
-				$return ['desc'] = '没有找到相应的上传目录';
-			}
+            $path = $full_dir . '/' . $dname;
+            if (move_uploaded_file ( $file['tmp_name'], $path )) {
+                $return ['status'] = '1';
+                $return ['desc'] = '文件上传成功';
+                $return ['upname'] = $fname;
+                $return ['savename'] = $dname;
+                $return ['url'] = "./images/attach/".$dname;
+                $return ['type'] = $ftype;
+            } else {
+                $return ['status'] = '-1';
+                $return ['desc'] = '服务器繁忙，上传失败';
+            }
 		}
 		return $return;
 	}

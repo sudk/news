@@ -14,29 +14,18 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.overall.js"></script>
 </head>
-
 <body>
 <!-- header start -->
 <div id="header">
     <div id="header-top">
         <div class="logo"><img src="images/logo.png" /></div>
     </div>
-    <div id="nav" class="nav nav-nosub" style="margin-top:75px;">
+    <div id="nav" class="nav nav-nosub">
         <div class="nav-cnt">
             <ul>
                 <li class="master current">
                     <a class="name" href="#"><strong>首页</strong></a>
                 </li>
-               <!--<li class="master">
-                    <a class="name" href="#"><strong>功能介绍</strong></a>
-                </li>
-                <li class="separator"> | </li>
-                <li class="master">
-                    <a class="name" href="#"><strong>帮助建议</strong></a>
-                </li>
-                <li class="master">
-                    <a class="name" href="#"><strong>客服中心</strong></a>
-                </li>-->
             </ul>
         </div>
     </div>

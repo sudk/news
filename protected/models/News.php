@@ -5,28 +5,31 @@
  */
 class News extends CActiveRecord {
 
-    const TYPE_N1=1;
-    const TYPE_N2=2;
-    const TYPE_N3=3;
-    const TYPE_N4=4;
+    const TYPE_1=1;
+    const TYPE_2=2;
+    const TYPE_3=3;
+    const TYPE_4=4;
 
-    const TYPE_F1=5;
-    const TYPE_F2=6;
-    const TYPE_F3=7;
+    const TYPE_5=5;
+    const TYPE_6=6;
+    const TYPE_7=7;
 
-    const TYPE_P1=8;
-    const TYPE_P2=9;
-    const TYPE_P3=10;
-    const TYPE_P4=11;
+    const TYPE_8=8;
+    const TYPE_9=9;
+    const TYPE_10=10;
+    const TYPE_11=11;
 
-    const TYPE_Q1=12;
-    const TYPE_Q2=13;
-    const TYPE_Q3=14;
-    const TYPE_Q4=15;
-    const TYPE_Q5=16;
-    const TYPE_Q6=17;
-    const TYPE_Q7=18;
-    const TYPE_Q8=19;
+    const TYPE_12=12;
+    const TYPE_13=13;
+    const TYPE_14=14;
+    const TYPE_15=15;
+    const TYPE_16=16;
+    const TYPE_17=17;
+    const TYPE_18=18;
+    const TYPE_19=19;
+
+    const To_Top=1;
+    const Not_To_Top=0;
 
     public static function model($className = __CLASS__) {
         return parent::model($className);
@@ -44,38 +47,36 @@ class News extends CActiveRecord {
         );
     }
 
+    public static function ToTop($to_top=null){
+        $ar=array(
+            self::To_Top=>"是",
+            self::Not_To_Top=>"否"
+        );
+        return $to_top === null ? $ar : $ar[$to_top];
+    }
+
     /**
-    电子报--热点、文体、小说、应用
-    澳洲风情--民俗、文化、风光
-    魅力山东--城市宣传、招商引资、企业推广、旅游文化
-    澳洲指南--教育、留学、旅游、美食、交通、酒店、医院、求救电话：000
      **/
 
     public static function GetType($type=null){
         $ar=array(
-            ''=>"---请选择类型---",
-            self::TYPE_N1=>"电子报-热点",
-            self::TYPE_N2=>"电子报-文体",
-            self::TYPE_N3=>"电子报-小说",
-            self::TYPE_N4=>"电子报-应用",
-
-            self::TYPE_F1=>"澳洲风情-民俗",
-            self::TYPE_F2=>"澳洲风情-文化",
-            self::TYPE_F3=>"澳洲风情-风光",
-
-            self::TYPE_P1=>"魅力山东-城市宣传",
-            self::TYPE_P2=>"魅力山东-招商引资",
-            self::TYPE_P3=>"魅力山东-企业推广",
-            self::TYPE_P4=>"魅力山东-旅游文化",
-
-            self::TYPE_Q1=>"澳洲指南-教育",
-            self::TYPE_Q2=>"澳洲指南-留学",
-            self::TYPE_Q3=>"澳洲指南-旅游",
-            self::TYPE_Q4=>"澳洲指南-美食",
-            self::TYPE_Q5=>"澳洲指南-交通",
-            self::TYPE_Q6=>"澳洲指南-酒店",
-            self::TYPE_Q7=>"澳洲指南-医院",
-            self::TYPE_Q8=>"澳洲指南-求救电话",
+            ''=>"---请选择栏目---",
+            self::TYPE_1=>"电子报-期刊",
+            self::TYPE_2=>"电子报-企业动态",
+            self::TYPE_3=>"IAUTV节目-城市之光",
+            self::TYPE_4=>"IAUTV节目-速成美食家",
+            self::TYPE_5=>"IAUTV节目-海外生活志",
+            self::TYPE_6=>"IAUTV节目-号码搜索器",
+            self::TYPE_7=>"IAUTV节目-相约澳洲",
+            self::TYPE_8=>"商务中心-城市宣传",
+            self::TYPE_9=>"商务中心-招商引资",
+            self::TYPE_10=>"商务中心-企业推广",
+            self::TYPE_11=>"商务中心-旅游文化",
+            self::TYPE_12=>"澳洲指南-留学",
+            self::TYPE_13=>"澳洲指南-养身",
+            self::TYPE_14=>"澳洲指南-旅游",
+            self::TYPE_15=>"澳洲指南-美食",
+            self::TYPE_16=>"澳洲指南-潮流",
         );
         return $type === null ? $ar : $ar[$type];
     }

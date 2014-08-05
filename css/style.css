@@ -3,6 +3,7 @@
 /* layout > 整体布局
 --------------------------------------------------------------------*/
 #header { z-index:3100; margin-top:10px;}
+#header-top { height:50px;}
 #header .logo { position:absolute; left:0;}
 #header .menu { float:right; margin-top:10px; height:30px; overflow:hidden;}
 #header .menu a { display:inline-block; text-align:center; color:#999;}

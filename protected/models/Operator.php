@@ -106,6 +106,9 @@ class Operator extends CActiveRecord {
             $r['refresh'] = false;
             return $r;
         }
+
+        $args['type'] = self::TYPE_SYSTEM;
+
         if ($args['type'] == '') {
             $r['message'] = '操作员类型不能为空';
             $r['refresh'] = false;
@@ -159,8 +162,6 @@ class Operator extends CActiveRecord {
                 //设置权限
                 OperatorAuth::batchAdd($args['login_name'], self::getRoleName($args['type']));
 
-                //记录操作日志
-                //Ophis::savelog(self::insertLog($model), 0);
                 $r['message'] = '添加成功';
                 $r['refresh'] = true;
                 $r['model'] = $model;

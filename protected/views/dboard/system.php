@@ -1,11 +1,18 @@
 <div class="clearfix" id='content'>
-    <div class="index_c">
-        <div class="index_c_top"></div>
-        <div class="index_c_main" style="height:220px;">
-            <h1 style='height:20px;line-height:20px;'>新闻</h1>
-           	<div class='clear'></div>
+    <div class="index_c_big">
+
+        <div class="index_c_big_main">
+            <ul>
+                <li>
+                    <img src="images/48/03.png" />
+                    <h1><a href="./?r=news/news/list">新闻报表</a></h1>
+                </li>
+                <li>
+                    <img src="images/48/04.png" />
+                    <h1><a href="./?r=operator/operator/list">操作员列表</a></h1>
+                </li>
+            </ul>
         </div>
-        <div class="index_c_bottom"></div>
     </div>
 </div>
 
