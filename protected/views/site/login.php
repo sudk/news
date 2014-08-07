@@ -78,7 +78,7 @@
 <!-- content end -->
 
 <!-- footer start -->
-<div id="footer">Copyright © 2013 by 信连银. All Rights Reserved</div>
+<div id="footer">Copyright © 2013 by IAUTV. All Rights Reserved</div>
 <!-- footer end -->
 
 </body>
