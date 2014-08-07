@@ -398,7 +398,7 @@ page;
                 $return ['url'] = "./images/attach/".$dname;
                 $return ['type'] = $ftype;
             } else {
-                $return ['status'] = '-1';
+                $return ['status'] = '-7';
                 $return ['desc'] = '服务器繁忙，上传失败';
             }
 		}
