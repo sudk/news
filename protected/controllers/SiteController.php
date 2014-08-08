@@ -312,11 +312,10 @@ return array(
     public function actionFileupload(){
         $file = $_FILES['attach'];
         if($file){
-            //上传图片
             $msg = Utils::fileUpload($file);
         }else{
             $msg['status'] = -1;
-            $msg['msg'] = "没有上传任何图片";
+            $msg['msg'] = "没有上传任何图片!";
         }
         print_r(json_encode($msg));
     }

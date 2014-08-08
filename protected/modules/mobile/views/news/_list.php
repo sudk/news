@@ -5,7 +5,7 @@
         <a class="list-group-item list-group-item-sm row" href="./?r=mobile/news/detail&id=<?=$row['news_id']?>">
             <div class="col-xs-12" style="padding:0px;vertical-align:middle;">
                 <?php if(substr(strrchr ($attach, '.'), 1)=="mp4"):?>
-                    <video  width="100%" controls="controls">
+                    <video  width="100%" height="200px" >
                         <source src="<?=$attach?>">
                         浏览器不支持
                     </video>
