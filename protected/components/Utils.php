@@ -368,19 +368,19 @@ page;
 
 		$ftype = substr ( strrchr ( $fname, '.' ), 1 );
 		if ($file ['error'] > 0) {
-			$return ['status'] = '-1';
+			$return ['status'] = '-2';
 			$return ['desc'] = '上传文件失败';
 		} elseif (empty( $fname )) {
-			$return ['status'] = '-1';
+			$return ['status'] = '-3';
 			$return ['desc'] = '没有上传任何文件';
 		} elseif ($file ['size'] > (Yii::app ()->params ['upload_file_maxsize']) * 1024 * 1024) {
-			$return ['status'] = '-1';
+			$return ['status'] = '-4';
 			$return ['desc'] = '上传文件太大了';
 		} elseif ($file ['size'] == 0) {
-			$return ['status'] = '-1';
+			$return ['status'] = '-5';
 			$return ['desc'] = '上传文件不能为空';
 		}elseif (!in_array($fileParts['extension'],$fileTypes)) {
-            $return ['status'] = '-1';
+            $return ['status'] = '-6';
             $return ['desc'] = '上传文件格式不正确！';
         } else {
 			$rname = time().rand(0,1000);
@@ -398,7 +398,7 @@ page;
                 $return ['url'] = "./images/attach/".$dname;
                 $return ['type'] = $ftype;
             } else {
-                $return ['status'] = '-1';
+                $return ['status'] = '-7';
                 $return ['desc'] = '服务器繁忙，上传失败';
             }
 		}
